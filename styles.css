@@ -506,9 +506,7 @@ main .mih2 {
 
 /* DIV DE CAJAS */
 
-.bodyApi {
-    background-color: rgba(0, 0, 0, 0.87);
-}
+
 
 .cajadragonball {
     gap: 50px;
@@ -597,4 +595,95 @@ main .mih2 {
     
 }
 
+.switch {
+    width: 86px;
+    height: 30px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 100px;
+    border: #333 solid 2px;
+    background-color: #132b41;
+
+}
+
+.switch i {
+    font-size: 1rem;
+    display: inline-block;
+    color: #fdc21c;
+}
+
+.nav-links li:last-child::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid thin #000;
+    left: 0;
+    right: unset;
+
+}
+
+.nav-links li:last-child.darkmode::before {
+    right: 0;
+    left: unset;
+    border: solid thin #fff;
+    
+}
+
+.nav-links li:last-child.active i:first-child {
+    color: #fff;
+}
+.nav-links li:last-child.active {
+    background-color: rgb(0, 0, 0);
+    border: solid 2px #fff;
+}
+/* modo oscuro */
+body.darkmode {
+    background-color: #000000d7;
+
+}
+
+body.darkmode .header {
+    background-color:  #000000dc;
+}
+body.darkmode .tituloh2 {
+    text-align: center;
+        margin: 20px 0;
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+
+}
+body.darkmode .producto-card {
+    height: 250px;
+    width: 270px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgba(32, 30, 30, 0.685);
+    text-align: center;
+    
+}
+
+
+body.darkmode .producto-card h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+body.darkmode .producto-card p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
 
